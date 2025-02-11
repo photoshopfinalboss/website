@@ -7,18 +7,17 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: #383838;
+    background: #00454791;
     background-blend-mode: darken;
     background-size: cover;
     background-position: center center;
 }
-
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 13px 60px;
+    padding: 5px 60px;
     background: #111418b6;
     display: flex;
     justify-content: space-between;
@@ -27,11 +26,13 @@ header {
     box-shadow: 0 7px 10px rgba(0, 0, 0, 0.664);
 }
 .logo {
-    font-size: 35px;
-    color: rgb(255, 224, 189);
+    font-size: 55px;
+    color: rgb(0, 117, 121);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 1000;
     transition: 0.5s;
+    letter-spacing: 5px;
+    line-height: 55px;
 }
 nav{
     float: right;
@@ -45,7 +46,7 @@ nav a {
     transition: .3s;
     padding: 3px 16px;
     border-radius: 5px;
-    border: rgb(114, 55, 0) solid 2px;
+    border:rgb(0, 87, 90) solid 2px;
     letter-spacing: .5px;
 }
 nav a i{
@@ -53,12 +54,12 @@ nav a i{
     font-size: 15px;
 }
 .logo:hover{
-    color:rgb(83, 83, 83);
+    color: rgb(0, 225, 255);
 }
 nav a:hover{
     color: rgb(255, 255, 255);
-    background-color: rgba(255, 175, 110, 0.342);
-    border: rgb(255, 123, 0) solid 2px;
+    background: rgba(110, 255, 248, 0.342);
+    border: rgb(95, 208, 216) solid 2px;
 }
 
 .wrapper{
@@ -66,7 +67,6 @@ nav a:hover{
     flex-wrap: wrap;
     justify-content: center;
     margin: 100px 50px 50px 50px;
-    background: #141414;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 40px;
@@ -96,7 +96,7 @@ nav a:hover{
     display: block;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgb(20, 20, 20), rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgb(0, 45, 53), rgba(0, 0, 0, 0));
     z-index: 2;
     transition: 0.5s all;
     opacity: 0;
@@ -149,7 +149,7 @@ nav a:hover{
     box-shadow: 0px 7px 10px rgba(0,0,0,0.2);
 }
 .card .info .btn:hover{
-        background: rgb(255, 138, 29);
+        background: rgb(29, 255, 255);
         transition: .5s ease-in-out;
 }
 
