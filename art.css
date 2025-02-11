@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: url(i30.jpg) no-repeat rgba(2, 2, 2, 0.54);
+    background: #383838;
     background-blend-mode: darken;
     background-size: cover;
     background-position: center center;
@@ -53,7 +53,7 @@ nav a i{
     font-size: 15px;
 }
 .logo:hover{
-    color:rgb(255, 149, 28);
+    color:rgb(83, 83, 83);
 }
 nav a:hover{
     color: rgb(255, 255, 255);
@@ -66,6 +66,10 @@ nav a:hover{
     flex-wrap: wrap;
     justify-content: center;
     margin: 100px 50px 50px 50px;
+    background: #141414;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 40px;
 }
 .card{
     width: 350px;

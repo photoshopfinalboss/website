@@ -12,7 +12,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 13px 60px;
+    padding: 5px 60px;
     background: #111418b6;
     display: flex;
     justify-content: space-between;
@@ -21,11 +21,13 @@ header {
     box-shadow: 0 7px 10px rgba(0, 0, 0, 0.664);
 }
 .logo {
-    font-size: 35px;
-    color: rgb(255, 224, 189);
+    font-size: 55px;
+    color: rgb(0, 117, 121);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 1000;
     transition: 0.5s;
+    letter-spacing: 5px;
+    line-height: 55px;
 }
 nav{
     float: right;
@@ -39,7 +41,7 @@ nav a {
     transition: .3s;
     padding: 3px 16px;
     border-radius: 5px;
-    border: rgb(114, 55, 0) solid 2px;
+    border:rgb(0, 87, 90) solid 2px;
     letter-spacing: .5px;
 }
 nav a i{
@@ -47,13 +49,13 @@ nav a i{
     font-size: 15px;
 }
 .logo:hover{
-    color: rgb(255, 149, 28);
+    color: rgb(0, 225, 255);
 }
 nav a:hover,
 nav a.active {
     color: rgb(255, 255, 255);
-    background-color: rgba(255, 175, 110, 0.342);
-    border: rgb(255, 123, 0) solid 2px;
+    background: rgba(110, 255, 248, 0.342);
+    border: rgb(95, 208, 216) solid 2px;
 }
 
 section {
@@ -75,79 +77,58 @@ section {
 .sec1div1 h1{
     font-size: 100px;
     margin-bottom: -15px;
-    color: rgb(255, 224, 189);
+    color: rgba(255, 255, 255, 0.767);
+    -webkit-text-stroke: 2px #5ffaff;
+    text-shadow: 0 0px 20px rgb(0, 255, 242);
 }
 .sec1div1 p{
     font-size: 20px;
     letter-spacing: 5px;
+    text-shadow: 0 10px 20px rgb(0, 0, 0);
 }
-.abtbtn{
+.abtbtn,.downloadbtn{
     background: none;
     text-decoration: none;
     padding: 5px 20px 5px 20px;
     border-radius: 20px;
-    border:rgb(114, 55, 0) solid 3px;
+    border:rgb(0, 87, 90) solid 3px;
     margin-top: 70px;
     margin-right: 20px;
     cursor: pointer;
 }
-.abtbtn a{
+.abtbtn a,.downloadbtn a{
     text-decoration: none;
     color: #fff;
     font-size: 20px;
     transition: .5s;
 }
-.abtbtn a i{
+.abtbtn a i,.downloadbtn a i{
     font-size: 16px;
     margin-left: 5px;
 }
-.insta a i{
-    font-size: 20px;
-    margin-left: 5px;
-}
-.abtbtn:hover{
-    background: rgba(255, 175, 110, 0.342);
-    border: rgb(255, 123, 0) solid 3px;
-    transition: .8s;
-}
-.insta{
-    background: none;
-    text-decoration: none;
-    padding: 5px 20px 5px 20px;
-    border-radius: 20px;
-    border: rgb(114, 55, 0) solid 3px;
-    margin-top: 70px;
-    margin-left: 20px;
-    cursor: pointer;
-}
-.insta a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    transition: .5s;
-}
-.insta:hover{
-    background: rgba(255, 175, 110, 0.342);
-    border: rgb(255, 123, 0) solid 3px;
+.abtbtn:hover,.downloadbtn:hover{
+    background: rgba(110, 255, 248, 0.342);
+    border: rgb(95, 208, 216) solid 3px;
     transition: .8s;
 }
 .nme{
-    color: #ff7b23;
+    color: #00f7ff;
+    font-weight: 750;
 }
 .mine{
     margin-top: 90px;
     
     height: 200px;
     border-radius: 50%;
-    border: rgba(255, 171, 138, 0.678) solid 4px;
-    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.788);
+    border: rgb(167, 245, 255) solid 4px;
+    box-shadow: 0 0px 20px rgb(0, 255, 242);
 }
 .home{
-    background: url(i30.jpg) no-repeat rgba(0, 0, 0, 0.74);
+    background: url(i33.png) no-repeat rgba(0, 0, 0, 0.74);
     background-size: cover;
     background-blend-mode: darken;
     color: white;
-    background-position: center top;
+    background-position: center;
 }
 /* ===== about ======== */
 .about{
@@ -331,65 +312,11 @@ section {
     }
 }
 @media (max-width: 858px){
-    .checkbtn{
-        display: block;
-        transition: .5s;
-    }
     header{
         height: 80px;
     }
     nav{
-        background: rgba(0, 0, 0, 0.418);
-        background-blend-mode: darken;
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        right: -100%;
-        top: 80px;
-        text-align: center;
-        margin-right: 0;
-        backdrop-filter: blur(15px);
-        transition: 0.5s;
-    }
-    nav a{
-        display: block;
-        justify-content: space-between;
-        margin: 50px 0;
-        overflow: hidden;
-        line-height: 30px;
-        transition: none;
-        transform: translateY(125px);
-        
-    }
-    nav a.active{
-        color: rgb(255, 123, 0);
-        border: none;
-        background: none;
-    }
-    nav a:hover{
-        border: none;
-        background: none; 
-    }
-    nav a{
-        text-shadow: 0 7px 10px #111111;
-        border: none;
-        background: none;
-    }
-    nav a,nav a i{
-        font-size: 25px;
-    }
-    #check:checked ~ nav{
-        right: 0;
-    }
-    .sec1div1 h1{
-        font-size: 80px;
-    }
-    #check:checked ~ .checkbtn{
         display: none;
-    }
-    #check:checked ~ .uncheckbtn{
-        display: block;
-        color:rgb(255, 123, 0);
     }
     .sec1div1 p{
         font-size: 20px;
