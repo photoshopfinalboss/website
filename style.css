@@ -22,12 +22,13 @@ header {
 }
 .logo {
     font-size: 55px;
-    color: rgb(0, 117, 121);
     text-decoration: none;
     font-weight: 1000;
     transition: 0.5s;
     letter-spacing: 5px;
     line-height: 55px;
+    color: rgb(0, 225, 255);
+    transition: .3s;
 }
 nav{
     float: right;
@@ -41,7 +42,7 @@ nav a {
     transition: .3s;
     padding: 3px 16px;
     border-radius: 5px;
-    border:rgb(0, 87, 90) solid 2px;
+    border:rgb(102, 102, 102) solid 2px;
     letter-spacing: .5px;
 }
 nav a i{
@@ -49,27 +50,26 @@ nav a i{
     font-size: 15px;
 }
 .logo:hover{
-    color: rgb(0, 225, 255);
+    
+    color: rgba(255, 255, 255, 0.89);
+    -webkit-text-stroke: 1px #5ffaffd2;
+    text-shadow: 0 0px 20px rgb(0, 255, 242);
 }
 nav a:hover,
 nav a.active {
     color: rgb(255, 255, 255);
-    background: rgba(110, 255, 248, 0.342);
-    border: rgb(95, 208, 216) solid 2px;
+    background: rgba(190, 190, 190, 0.39);
+    border: rgb(255, 255, 255) solid 2px;
 }
 
 section {
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 /* ===== home ======== */
 .sec1div1{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;    
     text-align: center;
     width: 100%;
 } 
@@ -83,7 +83,7 @@ section {
 }
 .sec1div1 p{
     font-size: 20px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     text-shadow: 0 10px 20px rgb(0, 0, 0);
 }
 .abtbtn,.downloadbtn{
@@ -129,60 +129,77 @@ section {
     background-blend-mode: darken;
     color: white;
     background-position: center;
+    align-items: center;
 }
 /* ===== about ======== */
 .about{
-    background: url(i2.jpg) no-repeat rgba(0, 0, 0, 0.829);
+    background: url(i99.png) no-repeat rgba(0, 0, 0, 0.829);
     background-size: cover;
     background-blend-mode: darken;
     color: white;
+    align-items: flex-end;
+    background-position: left; 
 }
 .sec2div1{
-    position: absolute;
-    transform: translateY(35%);
-    text-align: center;
-    width: 100%;
-}
-.pd{
-    margin-bottom: 100px;
-    margin-top: -150px;
+    position: relative;
+    width: 50%;
+    margin-left: 2%;
 }
 .pd h1{
-    font-size: 35px;
-    margin-bottom: 10px;
+    font-size: 60px;
+    margin-bottom: 100px;
     text-shadow: 0 7px 10px #111111;
     color: #6bff73;
 }
-.pd p{
-    font-size: 23px;
-    text-shadow: 0 7px 10px #111111;
-    color: #b7ffbb;
+.spnabt{
+    color: #6bff73;
+    font-size: 25px;
+    font-weight: bold;
 }
-.description{
+.pd p{
     font-size: 20px;
     text-shadow: 0 7px 10px #111111;
-    color: #feffd7;
-    letter-spacing: 0.5px;
+    color: #b7ffbb;
+    margin-bottom: 100px;
 }
+.A{
+    font-size: 95px;
+}
+.description{
+    font-size: 25px;
+    text-shadow: 0 7px 10px #111111;
+    color: #b7ffbb;
+    letter-spacing: 0.5px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
 /* ===== creations ======== */
 .creations{
-    background: url(i3.jpg) no-repeat rgba(0, 0, 0, 0.829);
+    background: url(i32.jpg) no-repeat rgba(0, 0, 0, 0.89);
     background-size: cover;
-    background-blend-mode: darken;
     color: white;
-    background-position: center bottom;
+    background-position: top;
+    background-blend-mode: darken;
+    align-items: center;
 }
 .main{
-    padding: 80px 100px 50px;
+    padding: 10px;
     text-align: center;
     align-items: center;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
 }
 .container{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 25px;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
 }
 .container img{
     width: 350px;
@@ -190,7 +207,7 @@ section {
     object-position: bottom;
     margin: 5px;
     margin: 5px 15px;
-    border: 4px solid rgba(255, 180, 232, 0.075);
+    border: 4px solid rgba(255, 238, 0, 0.226);
     border-radius: 10px;
 }
 .viewmore a i{
@@ -201,306 +218,58 @@ section {
     text-align: center;
     text-decoration: none;
     color: white;
-    border: 3px solid #ff68ff;
+    border: 3px solid #ffd900;
     padding: 5px 20px;
     border-radius: 20px;
     font-size: 20px;
-    color: #ffd0ff;
+    transition: .6s;
 }
 .viewmore a:hover{
-    background: #ff00ff65;
+    background: #ffae008c;
     transition: .5s;
 }
-.checkbtn{
-    font-size: 28px;
-    color: white;
-    float: right;
-    line-height: 40px;
-    margin-right: 20px;
-    cursor: pointer;
-    display: none;
-}
-.uncheckbtn{
-    font-size: 35px;
-    color: white;
-    float: right;
-    cursor: pointer;
-    line-height: 40px;
-    display: none;
-    margin-right: 20px;
-}
-#check{
-    display: none;
-}
 
-@media (max-width:1360px){
-    .container img{
-        width: 340px;
-    }
-}
-@media (max-width:1330px){
-    .container img{
-        width: 320px;
-    }
-    .main{
-        padding: 80px 80px 50px;
-    }
-}
-@media (max-width:1250px){
-    .container img{
-        width: 300px;
-    }
-    .main{
-        padding: 80px 60px 50px;
-    }
-}
+
+
 @media (max-width:1200px){
-    .container img{
-        width: 300px;
+    .pd h1{
+        font-size: 60px;
+        margin-bottom: 100px;
     }
-    .main{
-        padding: 80px 50px 50px;
-    }
-}
-@media (max-width:1150px){
-    .container img{
-        width: 280px;
-    }
-    .main{
-        padding: 80px 50px 50px;
+    .pd p{
+        margin-bottom: 100px;
     }
 }
-@media (max-width:1100px){
-    .container img{
-        width: 260px;
-    }
-    .main{
-        padding: 80px 50px 50px;
-    }
-}
-@media (max-width:1050px){
-    .container img{
-        width: 260px;
-    }
-    .main{
-        padding: 80px 40px 50px;
-    }
-}
-@media (max-width:1000px){
-    .container img{
-        width: 350px;
-    }
-    .main{
-        padding: 80px 40px 50px;
-    }
+@media (max-width:1160px){
     #hide1{
         display: none;
     }
-}
-
-@media (max-width: 952px){
-    header{
-        padding-left: 40px;
-        padding-right: 10px;      
-    }
-    nav a{
-        padding: 3px 13px;
-        margin-left: 15px;
-    }
-    nav{
-        margin-right: 20px;
-    }
-}
-@media (max-width: 858px){
-    header{
-        height: 80px;
-    }
-    nav{
-        display: none;
-    }
-    .sec1div1 p{
-        font-size: 20px;
-        margin-top: 5px;
-        padding: 0 60px;
-    }
-    .mine{
-        margin-top: 70px;
-    }
     .sec2div1{
-        position: absolute;
-        transform: translateY(50%);
-        text-align: center;
-        width: 100%;
-    }
-    .pd{
-        margin-bottom: 90px;
-        margin-top: -200px;
-    }
-    .pd h1{
-        font-size: 30px;
-        margin-bottom: 20px;
-        text-shadow: 0 7px 10px #111111;
-        color: #6bff73;
-    }
-    .pd p{
-        font-size: 20px;
-        text-shadow: 0 7px 10px #111111;
-        color: #b7ffbb;
-        letter-spacing: -1px;
-        line-height: 30px;
-    }
-    .description{
-        font-size: 15px;
-        text-shadow: 0 7px 10px #111111;
-        color: #feffd7;
-        letter-spacing: 0.5px;
-        line-height: 30px;
-    }
-    .abtbtn:hover{
-        background: none;
-    }
-    .container img{
-            width: 290px;
-        }
-    .main{
-        padding: 80px 40px 50px;
+        width: 70%;
     }
 }
-@media (max-width: 750px){
-    .container img{
-        width: 350px;
-    }
-    .main{
-        padding: 80px 40px 50px;
-    }
+@media (max-width:916px){
     #hide2{
         display: none;
     }
-}
-
-@media (max-width: 700px){
-    header{
-        padding-left: 10px;
-    }
-    .checkbtn,.uncheckbtn{
-        margin-right: 5px;
-    }
-}
-@media (max-width: 600px){
-    .container img{
-        width: 310px;
-    }
-    .main{
-        padding: 80px 40px 50px;
-    }
-}
-@media (max-width: 475px){
-    header{
-        padding-left: 10px;
-    }
-    .checkbtn{
-        margin-right: 5px;
-    }
-    .sec1div1 h1{
-        font-size: 70px;
-    }
-    .mine{
-        margin-bottom: -20px;
-        height: 150px;
-    }
-}
-@media (max-width: 428px){
-    header{
-        height: 80px;
-    }
     nav{
-        top: 80px;
-        background: rgba(0, 0, 0, 0.5);
-        background-blend-mode: darken;
-    }
-    nav a{
-        transform: translateY(175px);
-    }
-    .description{
-        font-size: 18px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .checkbtn:hover{
-        background: none;
-    }
-    .viewmore a{
-        font-size: 18px;
-    }
-    .main{
-        padding-bottom: 10px;
-    }
-    .container{
-        margin-bottom: 80px;
-    }
-    .sec2div1{
-        transform: translateY(40%);
-    }
-    .sec1div1 p{
-        font-size: 18px;
-        letter-spacing: 2px;
-    }
-    .mine{
-        margin-top: 90px;
-        margin-bottom: 10px;
-        height: 230px;
-    }
-    .home{
-        background-position-x: center;
+        display: none;
     }
     .about{
-        background-position-x: center;
+        align-items: center;  
+        justify-content: center;
+        align-content: center;
+        text-align: center;
     }
-    .creations{
-        background-position-x: right;
-    }
-    .contact{
-        background-position: center center;
-    }
-}
-@media (max-width: 301px){
-    .logo{
-        font-size: 28px;        
-    }
-    .sec1div1 h1{
-        font-size: 50px;
-    }
-    .sec1div1 p{
-        font-size: 15px;
-        padding: 10px 30px 0;
-    }
-    .mine{
-        height: 150px;
-    }
-    .checkbtn{
-        font-size: 25px;
-    }
-    .uncheckbtn{
-        font-size: 30px;
-    }
-    .insta{
-        margin: 20px 10px 0;
-    }
-    .abtbtn{
-        margin: 35px 10px 0;
-    }
-    nav{
-        top: 67px;
-    }
-    .description{
-        font-size: 16px;
-        line-height: 18px;
-    }
-    .pd{
-        margin-bottom: 55px;
-        margin-top: -180px;
-    }
-    .container img{
-        width: 250px;
+    header {
+        justify-content: center;
     }
 }
+@media (max-width:880px){
+    .sec2div1{
+        height: 50%;
+        width: 90%;
+    }
+}
+
+
