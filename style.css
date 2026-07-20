@@ -231,63 +231,6 @@ section {
 
 
 
-/* ===== media-height ======== */
-@media (min-height:1500px){
-    .logo {
-        font-size: 70px;
-        line-height: 70px;
-    }
-    nav a {
-        font-size: 25px;
-    }
-    nav a i{
-        font-size: 20px;
-    }
-    .sec1div1 h1{
-        font-size: 100px;
-    }
-    .mine{
-        height: 300px;
-    }
-    .sec1div1 p{
-        font-size: 25px;
-    }
-    .abtbtn a,.downloadbtn a{
-        font-size: 25px;
-    }
-    .abtbtn a i,.downloadbtn a i{
-        font-size: 18px;
-    }
-}
-@media (min-height:1000px){
-    .logo {
-        font-size: 120px;
-        line-height: 120px;
-    }
-    nav a {
-        font-size: 35px;
-    }
-    nav a i{
-        font-size: 25px;
-    }
-    .sec1div1 h1{
-        font-size: 100px;
-    }
-    .mine{
-        height: 400px;
-    }
-    .sec1div1 p{
-        font-size: 35px;
-    }
-    .abtbtn a,.downloadbtn a{
-        font-size: 40px;
-    }
-    .abtbtn a i,.downloadbtn a i{
-        font-size: 25px;
-    }
-}
-
-
 /* ===== media-width ======== */
 @media (max-width:1200px){
     .pd h1{
@@ -308,12 +251,12 @@ section {
     .sec2div1{
         width: 70%;
     }
+    nav{
+        display: none;
+    }
 }
 @media (max-width:916px){
     #hide2{
-        display: none;
-    }
-    nav{
         display: none;
     }
     .about{
@@ -346,4 +289,109 @@ section {
     .sec1div1 h1{
         font-size: 70px;
     }
+}
+
+
+/* ===== media-height ======== */
+@media (min-height:1500px){
+    .logo {
+        font-size: 70px;
+        line-height: 70px;
+    }
+    nav a {
+        font-size: 25px;
+    }
+    nav a i{
+        font-size: 20px;
+    }
+    .sec1div1 h1{
+        font-size: 100px;
+    }
+    .mine{
+        height: 300px;
+    }
+    .sec1div1 p{
+        font-size: 25px;
+    }
+    .abtbtn a,.downloadbtn a{
+        font-size: 25px;
+    }
+    .abtbtn a i,.downloadbtn a i{
+        font-size: 18px;
+    }
+    .pd h1{
+        font-size: 80px;
+        margin-bottom: 70px;
+    }
+    .pd p{
+        font-size: 25px;
+    }
+    .pd h1{
+        font-size: 60px;
+        margin-bottom: 100px;
+    }
+    .spnabt{
+        font-size: 35px;
+    }
+    .A{
+        font-size: 120px;
+    }
+    .description{
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    #hide2{
+        display: none;
+    }
+    #hide1{
+        display: none;
+    }
+    
+    
+}
+@media (min-height:1000px){
+    .logo {
+        font-size: 120px;
+        line-height: 120px;
+    }
+    nav a {
+        font-size: 35px;
+    }
+    nav a i{
+        font-size: 25px;
+    }
+    .sec1div1 h1{
+        font-size: 100px;
+    }
+    .mine{
+        height: 400px;
+    }
+    .sec1div1 p{
+        font-size: 35px;
+    }
+    .abtbtn a,.downloadbtn a{
+        font-size: 40px;
+    }
+    .abtbtn a i,.downloadbtn a i{
+        font-size: 25px;
+    }
+    #hide1{
+        display: none;
+    }
+    .container img{
+        width: 600px;
+    }
+    .viewmore a i{
+        font-size: 25px;
+    }
+    .viewmore a{
+        font-size: 30px;
+    }
+    #hide2{
+        display: none;
+    }
+    #hide1{
+        display: none;
+    }
+
 }
