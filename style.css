@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
+
+
+
+/* ===== header ======== */
 header {
     position: fixed;
     top: 0;
@@ -62,27 +66,50 @@ nav a.active {
     border: rgb(255, 255, 255) solid 2px;
 }
 
+
+
+/* ===== others ======== */
 section {
     min-height: 100vh;
     display: flex;
     overflow: hidden;
 }
+
+
+
 /* ===== home ======== */
+.home{
+    background: url(i36.webp) no-repeat rgba(0, 0, 0, 0.74);
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    background-position: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
 .sec1div1{
-    position: relative;    
-    text-align: center;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-shrink: 1;
 } 
 
 .sec1div1 h1{
+    margin-left: 2%;
+    margin-right: 2%;
     font-size: 100px;
-    margin-bottom: -15px;
     color: rgba(255, 255, 255, 0.767);
     -webkit-text-stroke: 2px #5ffaff;
     text-shadow: 0 0px 20px rgb(0, 255, 242);
 }
 .sec1div1 p{
-    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.2rem;
     letter-spacing: 3px;
     text-shadow: 0 10px 20px rgb(0, 0, 0);
 }
@@ -93,7 +120,8 @@ section {
     border-radius: 20px;
     border:rgb(0, 87, 90) solid 3px;
     margin-top: 70px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     cursor: pointer;
 }
 .abtbtn a,.downloadbtn a{
@@ -116,21 +144,16 @@ section {
     font-weight: 750;
 }
 .mine{
-    margin-top: 90px;
-    
-    height: 200px;
+    position: relative;
+    max-height: 200px;
     border-radius: 50%;
     border: rgb(167, 245, 255) solid 4px;
     box-shadow: 0 0px 20px rgb(0, 255, 242);
 }
-.home{
-    background: url(i36.webp) no-repeat rgba(0, 0, 0, 0.74);
-    background-size: cover;
-    background-blend-mode: darken;
-    color: white;
-    background-position: center;
-    align-items: center;
-}
+
+
+
+
 /* ===== about ======== */
 .about{
     background: url(i99.png) no-repeat rgba(0, 0, 0, 0.829);
@@ -172,7 +195,10 @@ section {
     letter-spacing: 0.5px;
     margin-bottom: 50px;
     font-weight: bold;
+    margin-bottom: 2%;
 }
+
+
 
 /* ===== creations ======== */
 .creations{
@@ -231,167 +257,115 @@ section {
 
 
 
-/* ===== media-width ======== */
-@media (max-width:1200px){
-    .pd h1{
-        font-size: 60px;
-        margin-bottom: 100px;
-    }
-    .pd p{
-        margin-bottom: 100px;
-    }
-    .sec1div1 p{
-        font-size: 25px;
-    }
-}
+
+
 @media (max-width:1160px){
     #hide1{
         display: none;
     }
-    .sec2div1{
-        width: 70%;
-    }
-    nav{
-        display: none;
-    }
-}
-@media (max-width:916px){
-    #hide2{
-        display: none;
-    }
-    .about{
-        align-items: center;  
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-    }
-    header {
-        display: none;
-    }   
-}
-@media (max-width:880px){
-    .sec2div1{
-        height: 50%;
-        width: 90%;
-    }
-}
-@media (max-width:700px){  
-    .sec1div1 h1{
-        font-size: 80px;
-    }
-    .sec1div1 p{
-        font-size: 20px;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-}
-@media (max-width:450px){
-    .sec1div1 h1{
-        font-size: 70px;
-    }
-}
-
-
-/* ===== media-height ======== */
-@media (min-height:1500px){
-    .logo {
-        font-size: 70px;
-        line-height: 70px;
-    }
-    nav a {
-        font-size: 25px;
-    }
-    nav a i{
-        font-size: 20px;
-    }
-    .sec1div1 h1{
-        font-size: 100px;
-    }
-    .mine{
-        height: 300px;
-    }
-    .sec1div1 p{
-        font-size: 25px;
-    }
-    .abtbtn a,.downloadbtn a{
-        font-size: 25px;
-    }
-    .abtbtn a i,.downloadbtn a i{
-        font-size: 18px;
-    }
     .pd h1{
-        font-size: 80px;
-        margin-bottom: 70px;
+        margin-bottom: 40px;
+        font-size: 50px;
+        line-height: 50px;
     }
     .pd p{
-        font-size: 25px;
-    }
-    .pd h1{
-        font-size: 60px;
-        margin-bottom: 100px;
-    }
-    .spnabt{
-        font-size: 35px;
-    }
-    .A{
-        font-size: 120px;
+        margin-bottom: 40px;
     }
     .description{
-        font-size: 35px;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 900px){
+    .sec2div1{
+        width: 100%;
+        margin-right: 6%;
+        margin-left: 6%;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .about{
+        align-items: center;
+        background-position: left; 
+    }
+    .pd h1{
         margin-bottom: 50px;
     }
-    #hide2{
-        display: none;
+    .pd p{
+        margin-bottom: 50px;
     }
-    #hide1{
-        display: none;
+    .description{
+
+        margin-bottom: 50px;
     }
-    
-    
 }
-@media (min-height:1000px){
-    .logo {
-        font-size: 120px;
-        line-height: 120px;
-    }
-    nav a {
-        font-size: 35px;
-    }
-    nav a i{
-        font-size: 25px;
-    }
-    .sec1div1 h1{
-        font-size: 100px;
-    }
-    .mine{
-        height: 400px;
-    }
-    .sec1div1 p{
-        font-size: 35px;
-    }
-    .abtbtn a,.downloadbtn a{
-        font-size: 40px;
-    }
-    .abtbtn a i,.downloadbtn a i{
-        font-size: 25px;
-    }
-    #hide1{
+@media (max-width:800px){
+    #hide2{
         display: none;
     }
     .container img{
-        width: 600px;
+        width: 300px;
     }
-    .viewmore a i{
-        font-size: 25px;
+    .pd h1{
+        margin-bottom: 40px;
     }
-    .viewmore a{
-        font-size: 30px;
+    .pd p{
+        margin-bottom: 40px;
     }
-    #hide2{
-        display: none;
+    .description{
+        margin-bottom: 40px;
     }
-    #hide1{
-        display: none;
-    }
-
 }
+@media (max-width: 700px){
+    nav{
+        display: none;
+    }
+    .sec1div1 h1{
+        font-size: 70px;
+    }
+    .pd h1{
+        font-size: 55px;
+        margin-bottom: 50px;
+    }
+    .spnabt{
+        font-size: 20px;
+    }
+    .pd p{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .A{
+        font-size: 90px;
+    }
+    .description{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 450px){
+    .sec1div1 h1{
+        font-size: 50px;
+    }
+    .pd h1{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .spnabt{
+        font-size: 15px;
+    }
+    .pd p{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .A{
+        font-size: 60px;
+    }
+    .description{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+
